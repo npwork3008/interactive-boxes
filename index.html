@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BOGO Offer</title>
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h1>YAY! It's BOGO</h1>
+
+    <!-- Offer Card 1: 1 Unit - 10% Off -->
+    <div class="box" id="box1">
+      <div class="box-header">
+
+        <!-- Radio button triggers expansion -->
+        <input type="radio" name="offer" id="offer1" checked>
+        <label for="offer1">
+          <span class="badge">10% Off</span>
+          <strong>1 Unit</strong>
+
+          <!-- Display price and discount -->
+          <p class="price">$10.00 USD <span class="strike">$24.00 USD</span></p>
+          <p class="desc">Standard Price</p>
+        </label>
+      </div>
+      <div class="box-content">
+
+        <!-- User selects size and color -->
+        <div class="row">
+          <label>#1</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>Red</option><option>Blue</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offer Card 2: 2 Unit - 20% Off -->
+    <div class="box popular" id="box2">
+      <div class="box-header">
+
+        <!-- Radio button triggers expansion -->
+        <input type="radio" name="offer" id="offer2">
+        <label for="offer2">
+          <span class="badge">20% Off</span>
+          <strong>2 Unit</strong>
+
+          <!-- Display price and discount -->
+          <p class="price">$18.00 USD <span class="strike">$24.00 USD</span></p>
+        </label>
+      </div>
+      <div class="box-content">
+
+        <!-- User selects size and color -->
+        <div class="row">
+          <label>#1</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>Red</option><option>Blue</option></select>
+        </div>
+        <div class="row">
+          <label>#2</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>Red</option><option>Blue</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offer Card 3: 3 Unit - 30% Off -->
+    <div class="box" id="box3">
+      <div class="box-header">
+
+        <!-- Radio button triggers expansion -->
+        <input type="radio" name="offer" id="offer3">
+        <label for="offer3">
+          <span class="badge">30% Off</span>
+          <strong>3 Unit</strong>
+          <p class="price">$24.00 USD <span class="strike">$24.00 USD</span></p>
+        </label>
+      </div>
+      <div class="box-content">
+
+        <!-- User selects size and color -->
+        <div class="row">
+          <label>#1</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>Red</option><option>Blue</option></select>
+        </div>
+        <div class="row">
+          <label>#2</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Black</option><option>Red</option><option>Blue</option></select>
+        </div>
+        <div class="row">
+          <label>#3</label>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>Red</option><option>Blue</option></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p class="delivery">Free Delivery</p>
+      <p class="total">Total: <strong>$18.00 USD</strong></p>
+      <button class="cart-btn">+ Add to Cart</button>
+      <p class="powered">@ Thank You For The Opportunity
+      </p>
+    </div>
+  </div>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
